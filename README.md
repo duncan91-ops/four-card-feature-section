@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/css-grid-solution-to-the-four-card-feature-section-hgV4xlRlS)
+- Live Site URL: [Live Site](https://duncan91-ops.github.io/four-card-feature-section/)
 
 ## My process
 
