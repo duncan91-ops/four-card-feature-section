@@ -1,0 +1,159 @@
+:root {
+  --primaryRed: hsl(0, 78%, 62%);
+  --primaryCyan: hsl(180, 62%, 55%);
+  --primaryOrange: hsl(34, 97%, 64%);
+  --primaryBlue: hsl(212, 86%, 64%);
+  --secondaryBlue: hsl(234, 12%, 34%);
+  --tertiaryBlue: hsl(229, 6%, 66%);
+  --lightGray: hsl(0, 0%, 98%);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  width: 375px;
+  background-color: transparent;
+}
+
+.header {
+  margin: 30px 30px 50px 30px;
+}
+
+.main__title--normal {
+  font-weight: 200;
+  color: var(--secondaryBlue);
+  font-size: 2.5rem;
+}
+
+.main__title--bold {
+  font-weight: 600;
+  color: var(--secondaryBlue);
+  font-size: 2.5rem;
+}
+
+.main__text {
+  color: var(--tertiaryBlue);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  margin: 0 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card.one {
+  border-top: 5px solid var(--primaryCyan);
+}
+
+.card.two {
+  border-top: 5px solid var(--primaryRed);
+}
+
+.card.three {
+  border-top: 5px solid var(--primaryOrange);
+}
+
+.card.four {
+  border-top: 5px solid var(--primaryBlue);
+}
+
+.card__title {
+  color: var(--secondaryBlue);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card__text {
+  color: var(--tertiaryBlue);
+  font-size: 1.4rem;
+}
+
+.card__hero {
+  padding-top: 30px;
+  height: 80px;
+  position: relative;
+  left: 0;
+}
+
+.card__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 80%;
+  }
+
+  .header {
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .main__title--normal {
+    text-align: center;
+  }
+
+  .main__title--bold {
+    text-align: center;
+  }
+
+  .main__text {
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 0;
+    height: 200px;
+  }
+
+  .card.one,
+  .card.four {
+    grid-row-end: span 2;
+  }
+}
